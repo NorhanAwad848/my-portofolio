@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Norhan Awad · Full Stack Django Developer</title>
+  <meta name="description" content="Norhan Awad – Full Stack Django Developer in Cairo, Egypt. Builds Django web applications end to end, leads a team of developers, and manages production servers on Linux and Nginx.">
+  <meta name="author" content="Norhan Awad">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Norhan Awad · Full Stack Django Developer">
+  <meta property="og:description" content="Django web applications, team leadership, and Linux & Nginx server management.">
+  <meta property="og:image" content="https://norhanawad848.github.io/my-portofolio/assets/og-image.jpg">
+  <meta property="og:url" content="https://norhanawad848.github.io/my-portofolio/">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='white'%3ENA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#top" aria-label="Norhan Awad – home">
+        <span class="brand-mark">NA</span>
+        <span class="brand-name">Norhan Awad</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn-small btn-primary hide-sm" href="assets/Norhan_Awad_CV.pdf" download>Download CV</a>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Full Stack Django Developer · Cairo, Egypt</p>
+        <h1>Hi, I'm Norhan Awad.<br><span class="accent">I build web apps that ship.</span></h1>
+        <p class="lead">
+          I build Django applications end to end, lead a team of 6 developers, and keep production
+          servers running on Linux &amp; Nginx.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">View my work</a>
+          <a class="btn btn-ghost" href="assets/Norhan_Awad_CV.pdf" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+            Download CV
+          </a>
+        </div>
+        <ul class="social">
+          <li><a href="https://github.com/NorhanAwad848" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/norhan-awad-b641ba23b/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:norhanawa848@gmail.com">Email</a></li>
+          <li><a href="https://www.credly.com/users/norhan-awad" target="_blank" rel="noopener">Credly</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <picture>
+            <source srcset="assets/norhan.webp" type="image/webp">
+            <img src="assets/norhan.jpg" width="720" height="900" alt="Portrait of Norhan Awad">
+          </picture>
+        </div>
+        <div class="photo-badge">
+          <span class="dot" aria-hidden="true"></span>
+          Python · Django · Linux
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="container" aria-label="Highlights">
+      <dl class="stats reveal">
+        <div><dt>Years of experience</dt><dd>2+</dd></div>
+        <div><dt>Client projects delivered</dt><dd>6</dd></div>
+        <div><dt>Developers I lead</dt><dd>6</dd></div>
+        <div><dt>B.Sc. grade</dt><dd>Excellent</dd></div>
+      </dl>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about">
+      <div class="section-head reveal">
+        <p class="kicker">About</p>
+        <h2>Developer first, with a lead's view of the whole project.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Full Stack Django Developer at <strong>Software House Solutions</strong>, where over the past
+            two years I've helped take <strong>6 client projects</strong> from requirements to production.
+          </p>
+          <p>
+            Alongside my own development work, I lead a team of 6 developers: I break requirements into
+            tasks, assign the work, and step in when someone is blocked on a technical problem. I also own
+            our production servers, from deployments and Nginx configuration to the backup process that
+            keeps client data safe.
+          </p>
+          <p>
+            I graduated from Helwan University in Computer Science (Software Engineering) with an
+            <strong>Excellent</strong> grade.
+          </p>
+        </div>
+        <ul class="pillars">
+          <li class="card reveal">
+            <span class="pill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </span>
+            <h3>Full stack Django</h3>
+            <p>Database design, business logic, and UI with Django Templates, all the way to production.</p>
+          </li>
+          <li class="card reveal">
+            <span class="pill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg>
+            </span>
+            <h3>Servers &amp; deployment</h3>
+            <p>Linux and Nginx setup, deployments, maintenance, and reliable backups.</p>
+          </li>
+          <li class="card reveal">
+            <span class="pill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="2.5"/><path d="M17 14.5a5 5 0 0 1 4.5 5"/></svg>
+            </span>
+            <h3>Team leadership</h3>
+            <p>Planning and assigning work, unblocking teammates, and keeping delivery on schedule.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section container" id="experience">
+      <div class="section-head reveal">
+        <p class="kicker">Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <div class="tl-meta">
+            <span class="tl-date">Feb 2026 – Present</span>
+            <span class="tl-place">Cairo, Egypt</span>
+          </div>
+          <div class="tl-body card">
+            <h3>Mid-Level Full Stack Django Developer</h3>
+            <p class="tl-company">Software House Solutions</p>
+            <ul class="ticks">
+              <li>Lead a team of 6 developers: break down requirements into tasks, assign work and track delivery.</li>
+              <li>The team's go-to person for technical problems, debugging blockers and guiding teammates to solutions.</li>
+              <li>Develop core features of client projects with Django while coordinating the team's work.</li>
+              <li>Manage production servers on Linux and Nginx: deployments, configuration and maintenance.</li>
+              <li>Own the server backup process to protect client data and allow fast recovery.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-meta">
+            <span class="tl-date">Aug 2024 – Jan 2026</span>
+            <span class="tl-place">Cairo, Egypt</span>
+          </div>
+          <div class="tl-body card">
+            <h3>Full Stack Django Developer</h3>
+            <p class="tl-company">Software House Solutions</p>
+            <ul class="ticks">
+              <li>Delivered client web applications end to end using Python, Django and Django Templates.</li>
+              <li>Designed database models and business logic, taking features from requirements to production.</li>
+              <li>Fixed production issues and improved existing systems after launch.</li>
+              <li>Took on deployment and server responsibilities on Linux and Nginx.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-meta">
+            <span class="tl-date">Feb 2024 – Mar 2024</span>
+            <span class="tl-place">Remote</span>
+          </div>
+          <div class="tl-body card">
+            <h3>Machine Learning Intern</h3>
+            <p class="tl-company">CodeAlpha</p>
+            <ul class="ticks">
+              <li>Built a credit scoring model to support loan approval decisions (98% accuracy).</li>
+              <li>Developed a handwritten character recognition system using a CNN.</li>
+              <li>Built a stroke risk prediction model on patient health data.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container" id="skills">
+      <div class="section-head reveal">
+        <p class="kicker">Skills</p>
+        <h2>What I work with</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="card skill-group reveal">
+          <h3>Backend</h3>
+          <ul class="chips">
+            <li class="chip-strong">Python</li><li class="chip-strong">Django</li><li>SQL</li><li>Database Design</li><li>Node.js</li><li>PHP / Laravel</li>
+          </ul>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>Frontend</h3>
+          <ul class="chips">
+            <li class="chip-strong">Django Templates</li><li>HTML5</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Angular</li>
+          </ul>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>Servers &amp; Tools</h3>
+          <ul class="chips">
+            <li class="chip-strong">Linux</li><li class="chip-strong">Nginx</li><li>Deployment</li><li>Server Backups</li><li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>Leadership &amp; More</h3>
+          <ul class="chips">
+            <li>Task Planning</li><li>Team Coordination</li><li>Mentoring</li><li>Agile / Scrum</li><li>Machine Learning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section container" id="projects">
+      <div class="section-head reveal">
+        <p class="kicker">Projects</p>
+        <h2>Selected work</h2>
+        <p class="section-sub">
+          My professional work is client projects at Software House Solutions and can't be shared publicly.
+          Below are personal and academic projects.
+        </p>
+      </div>
+
+      <ul class="projects">
+        <li class="card project reveal">
+          <div class="project-top"><span class="tag-type">Full stack</span></div>
+          <h3>Monch Auction</h3>
+          <p>Online auction platform with three roles (admin, seller and bidder), covering listings, bidding and administration.</p>
+          <ul class="tags"><li>React</li><li>Node.js</li></ul>
+          <div class="links"><a href="https://github.com/NorhanAwad848/Monch-Aucation" target="_blank" rel="noopener">Source code ↗</a></div>
+        </li>
+        <li class="card project reveal">
+          <div class="project-top"><span class="tag-type">Team lead</span></div>
+          <h3>ONSK Cinema</h3>
+          <p>Real-time cinema booking system where users choose a movie and reserve available seats. I led the project team.</p>
+          <ul class="tags"><li>Angular</li><li>TypeScript</li></ul>
+        </li>
+        <li class="card project reveal">
+          <div class="project-top"><span class="tag-type">Full stack</span></div>
+          <h3>Faculty System</h3>
+          <p>Portal for students and professors: professors add courses and upload timetables, and students view their schedules.</p>
+          <ul class="tags"><li>PHP</li><li>SQL</li><li>HTML / CSS</li></ul>
+          <div class="links"><a href="https://github.com/NorhanAwad848/faculty-system" target="_blank" rel="noopener">Source code ↗</a></div>
+        </li>
+        <li class="card project reveal">
+          <div class="project-top"><span class="tag-type">Machine learning</span></div>
+          <h3>Credit Scoring &amp; Handwriting Recognition</h3>
+          <p>Credit scoring model to support loan decisions (98% accuracy) and a CNN that recognizes handwritten characters.</p>
+          <ul class="tags"><li>Python</li><li>Machine Learning</li><li>CNN</li></ul>
+        </li>
+        <li class="card project reveal">
+          <div class="project-top"><span class="tag-type">Frontend</span></div>
+          <h3>Nour Hospital</h3>
+          <p>Multi-page hospital website that lists doctors and lets patients book appointment times.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="links"><a href="https://github.com/NorhanAwad848/Nour-Hospital" target="_blank" rel="noopener">Source code ↗</a></div>
+        </li>
+        <li class="card project reveal">
+          <div class="project-top"><span class="tag-type">Frontend</span></div>
+          <h3>Instagram Clone</h3>
+          <p>Instagram-style single-page app built with React as the final project of the ITI ReactJS track.</p>
+          <ul class="tags"><li>React</li><li>CSS</li></ul>
+          <div class="links"><a href="https://github.com/NorhanAwad848/Instagram-" target="_blank" rel="noopener">Source code ↗</a></div>
+        </li>
+        <li class="card project reveal">
+          <div class="project-top"><span class="tag-type">Full stack</span></div>
+          <h3>KENY Store</h3>
+          <p>Multi-page clothing store where users browse products and shop.</p>
+          <ul class="tags"><li>ASP.NET</li><li>HTML / CSS</li></ul>
+        </li>
+        <li class="card project reveal">
+          <div class="project-top"><span class="tag-type">Networking</span></div>
+          <h3>University Network</h3>
+          <p>Network design for a university split into colleges: subnetting, IP assignment, and servers that connect them.</p>
+          <ul class="tags"><li>Networking</li><li>Subnetting</li></ul>
+          <div class="links"><a href="https://github.com/NorhanAwad848/university-Network" target="_blank" rel="noopener">Source code ↗</a></div>
+        </li>
+        <li class="card project reveal">
+          <div class="project-top"><span class="tag-type">Frontend</span></div>
+          <h3>Ramo Stable</h3>
+          <p>One-page website for a horse stable that showcases its horses and breeds.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+          <div class="links">
+            <a href="https://norhanawad848.github.io/RamoStable/RamoSite.html" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/NorhanAwad848/RamoStable" target="_blank" rel="noopener">Source code ↗</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="section container" id="education">
+      <div class="section-head reveal">
+        <p class="kicker">Education</p>
+        <h2>Education &amp; certifications</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="card reveal">
+          <h3>B.Sc. in Computer Science – Software Engineering</h3>
+          <p class="muted">Helwan University · 2020 – 2024</p>
+          <p>Graduated with an <strong>Excellent</strong> grade.</p>
+          <hr>
+          <h3>Smart Systems Training</h3>
+          <p class="muted">The American University in Cairo · 2024</p>
+          <p>AI and machine learning fundamentals, neural networks (CNNs, RNNs, BERT) and embedded systems.</p>
+          <hr>
+          <h3>ITI – Information Technology Institute</h3>
+          <p class="muted">2022 – 2023</p>
+          <p>Training tracks in ReactJS, .NET Web Development, and Web Development with PHP &amp; Laravel.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Certifications</h3>
+          <ul class="cert-list">
+            <li>Python for Data Science and AI</li>
+            <li>Introduction to Cloud Computing</li>
+            <li>Node and Express Essentials</li>
+            <li>SQL</li>
+            <li>Data Literacy</li>
+          </ul>
+          <a class="text-link" href="https://www.credly.com/users/norhan-awad" target="_blank" rel="noopener">View badges on Credly ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container" id="contact">
+      <div class="contact card reveal">
+        <p class="kicker">Contact</p>
+        <h2>Let's talk.</h2>
+        <p class="lead">Have a role or a project in mind? I'd be happy to hear about it.</p>
+        <div class="hero-cta center">
+          <a class="btn btn-primary" href="mailto:norhanawa848@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            norhanawa848@gmail.com
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/norhan-awad-b641ba23b/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year">2026</span> Norhan Awad</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
